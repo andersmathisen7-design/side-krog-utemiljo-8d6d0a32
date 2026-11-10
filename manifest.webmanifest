@@ -1,0 +1,25 @@
+{
+  "name": "Krog Utemiljø",
+  "short_name": "Krog",
+  "description": "Krog Trefelling feller trær, også vanskelige trær der det er trangt. Flishugging, bortkjøring og stubbfresing i Follo, Oslo, Bærum og Østfold.",
+  "lang": "nb",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2f5d3a",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

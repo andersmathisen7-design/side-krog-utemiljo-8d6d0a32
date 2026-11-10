@@ -1,0 +1,53 @@
+/* Fast fra Sidefabrikken: bestillingswidgeten. */
+:root { --nf-farge: #2f5d3a; }
+#nf-bestill [hidden] { display: none !important; }
+#nf-bestill button { font: inherit; padding: 0.5rem 0.9rem; margin: 0.2rem; border: 1px solid var(--nf-farge); border-radius: 6px; background: #fff; color: var(--nf-farge); cursor: pointer; }
+#nf-bestill button:disabled { opacity: 0.6; }
+#nf-bestill .nf-knapp { background: var(--nf-farge); color: #fff; }
+#nf-bestill .nf-tjeneste { display: block; width: 100%; text-align: left; }
+#nf-bestill .nf-tjeneste small, #nf-bestill .nf-vare small { display: block; color: #555; }
+#nf-bestill .nf-felt { display: block; margin: 0.5rem 0; }
+#nf-bestill input, #nf-bestill select, #nf-bestill textarea { font: inherit; padding: 0.4rem; border: 1px solid #c5cad3; border-radius: 4px; display: block; width: 100%; max-width: 24rem; }
+#nf-bestill input[type="checkbox"], #nf-bestill input[type="radio"] { display: inline-block; width: auto; margin: 0 0.4rem 0 0; vertical-align: middle; }
+#nf-bestill .nf-rad { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+#nf-bestill .nf-vare { padding: 0.4rem 0; border-bottom: 1px solid #e3e6eb; }
+#nf-bestill .nf-feil, #nf-bestill .nf-utsolgt { color: #b3261e; }
+#nf-bestill .nf-test { background: #fff4e5; padding: 0.4rem 0.8rem; border-radius: 6px; }
+#nf-bestill .nf-oppsummering { font-weight: 600; }
+#nf-bestill .nf-faner { display: flex; flex-wrap: wrap; gap: 0.25rem; margin: 0.5rem 0 1rem; }
+#nf-bestill .nf-fane.nf-valgt, #nf-bestill .nf-dag.nf-valgt { background: var(--nf-farge); color: #fff; }
+#nf-bestill .nf-adresse { position: relative; max-width: 24rem; }
+#nf-bestill .nf-forslag { position: absolute; top: 100%; left: 0; right: 0; z-index: 10; max-height: 15rem; overflow-y: auto; background: #fff; border: 1px solid #c5cad3; border-radius: 4px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); }
+#nf-bestill .nf-forslag button { display: block; width: 100%; margin: 0; border: 0; border-radius: 0; padding: 0.5rem 0.75rem; text-align: left; color: inherit; }
+#nf-bestill .nf-forslag button:hover, #nf-bestill .nf-forslag button:focus { background: #f4f7fb; }
+#nf-bestill .nf-dager { display: flex; flex-wrap: wrap; gap: 0.25rem; margin: 0.5rem 0; }
+#nf-bestill .nf-dag.nf-full { text-decoration: line-through; color: #777; border-color: #c5cad3; }
+#nf-bestill .nf-tillegg { margin: 0.5rem 0; }
+#nf-bestill .nf-sporsmal { margin: 0.8rem 0; }
+#nf-bestill .nf-hjelp { display: block; font-size: 0.875rem; color: #666; margin: 0.15rem 0 0.25rem; }
+#nf-bestill .nf-sum { font-weight: 700; font-size: 1.15rem; }
+#nf-bestill .nf-ja-nei { display: flex; gap: 1.5rem; margin-top: 0.25rem; }
+.prisliste table { border-collapse: collapse; width: 100%; max-width: 36rem; }
+.prisliste th, .prisliste td { text-align: left; padding: 0.4rem 0.6rem 0.4rem 0; border-bottom: 1px solid #e3e6eb; vertical-align: top; }
+.prisliste td:last-child, .prisliste th:last-child { text-align: right; white-space: nowrap; padding-right: 0; }
+.prisliste small { color: #555; }
+.prisliste .prisinfo { font-size: 0.875rem; color: #555; }
+
+.nf-skjema .nf-felt { display: block; margin: 0.75rem 0; }
+.nf-skjema label, .nf-skjema legend { display: block; font-weight: 600; }
+.nf-skjema fieldset { border: 0; padding: 0; margin: 0.75rem 0; min-width: 0; }
+.nf-skjema fieldset label { font-weight: 400; }
+.nf-skjema input, .nf-skjema textarea { font: inherit; padding: 0.5rem; border: 1px solid #c5cad3; border-radius: 4px; display: block; width: 100%; max-width: 32rem; }
+.nf-skjema input[type="radio"] { display: inline-block; width: auto; margin: 0 0.4rem 0 0; vertical-align: middle; }
+.nf-skjema input:focus, .nf-skjema textarea:focus { outline: 2px solid var(--nf-farge); outline-offset: 1px; }
+.nf-skjema button { font: inherit; border: 0; cursor: pointer; }
+.nf-skjema .nf-info { font-size: 0.875rem; color: #555; }
+
+/* Designet */
+*{box-sizing:border-box}body{margin:0;font-family:Georgia,serif;font-size:18px;line-height:1.6;color:#1f2a22;background:#fbfcfa}h1,h2,h3,.logo,.knapp,nav a,.over{font-family:system-ui,Helvetica,Arial,sans-serif}h1{font-size:2rem;line-height:1.2;margin:0 0 1rem;color:#1d3524}h2{font-size:1.5rem;line-height:1.25;margin:0 0 1rem;color:#1d3524}h3{font-size:1.2rem;margin:0 0 .5rem;color:#1d3524}p{margin:0 0 1rem;max-width:65ch}a{color:#2f5d3a;text-decoration:underline}a:focus-visible,.knapp:focus-visible{outline:3px solid #c9822b;outline-offset:3px}.in{width:100%;max-width:1040px;margin:0 auto;padding:0 16px}.topp{background:#fff;border-bottom:4px solid #2f5d3a}.topp .in{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;padding-top:10px;padding-bottom:10px}.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.15rem;color:#1d3524;text-decoration:none}.merke{width:40px;height:40px;flex:none}.topp nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 8px}.topp nav a{display:inline-block;padding:11px 10px;min-height:44px;color:#1d3524;font-weight:600;text-decoration:none}.topp nav a:hover{text-decoration:underline}.topp nav a.ring{background:#2f5d3a;color:#fff;border-radius:6px;padding:11px 16px}.hero{background:#1d3524;background:linear-gradient(135deg,#1d3524,#2f5d3a);color:#fff;padding:48px 0}.hero h1{color:#fff;font-size:2.2rem}.hero .ingress{font-size:1.15rem;color:#eef3ec}.over{text-transform:uppercase;letter-spacing:.08em;font-size:.85rem;font-weight:700;color:#cfe3cf;margin:0 0 .75rem}.knapper{display:flex;flex-direction:column;gap:12px;margin-top:1.5rem}.knapp{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 22px;border-radius:6px;background:#2f5d3a;color:#fff;font-weight:700;text-decoration:none;border:2px solid #2f5d3a}.hero .knapp{background:#fff;color:#1d3524;border-color:#fff}.hero .knapp.lys{background:transparent;color:#fff;border-color:#fff}.knapp:hover{opacity:.9}section{padding:44px 0}.lys-bg{background:#eef3ec}.kort{display:grid;grid-template-columns:1fr;gap:16px;margin-top:1.5rem}.kort article{background:#fff;border:1px solid #cfdccf;border-top:5px solid #2f5d3a;border-radius:6px;padding:20px}.kort p{margin-bottom:.75rem}.trinn{list-style:none;margin:1.5rem 0 0;padding:0;counter-reset:ingen}.trinn li{background:#fff;border-left:5px solid #2f5d3a;padding:14px 16px;margin-bottom:12px;border-radius:0 6px 6px 0}.trinn strong{display:block;font-family:system-ui,Helvetica,Arial,sans-serif;color:#1d3524}.omr{list-style:none;margin:1rem 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px}.omr li{background:#2f5d3a;color:#fff;font-family:system-ui,Helvetica,Arial,sans-serif;font-weight:600;padding:8px 16px;border-radius:999px}.sidetopp{background:#eef3ec;padding:36px 0;border-bottom:1px solid #cfdccf}.liste{margin:0 0 1rem;padding-left:1.2rem;max-width:65ch}.liste li{margin-bottom:.5rem}details{background:#fff;border:1px solid #cfdccf;border-radius:6px;padding:12px 16px;margin-bottom:10px;max-width:65ch}summary{cursor:pointer;font-family:system-ui,Helvetica,Arial,sans-serif;font-weight:700;color:#1d3524;min-height:44px;display:flex;align-items:center}.tlf{font-family:system-ui,Helvetica,Arial,sans-serif;font-size:1.4rem;font-weight:700}.bunn{background:#1d3524;color:#eef3ec;padding:36px 0 28px}.bunn a{color:#fff}.bunn p{margin-bottom:.5rem}.bunn ul{list-style:none;margin:.5rem 0 0;padding:0}.bunn li{margin-bottom:.25rem}.bunn li a{display:inline-block;padding:8px 0;min-height:44px}.nf-skjema label{display:block;font-family:system-ui,Helvetica,Arial,sans-serif;font-weight:600;margin-bottom:.25rem}.nf-skjema input,.nf-skjema textarea{width:100%;max-width:520px;padding:12px;font-size:1rem;border:2px solid #7d977f;border-radius:6px}.nf-skjema .knapp{cursor:pointer;color:#fff;background:#2f5d3a}@media(min-width:700px){body{font-size:19px}h1{font-size:2.6rem}.hero h1{font-size:3rem}h2{font-size:1.8rem}.hero{padding:72px 0}.knapper{flex-direction:row}.kort{grid-template-columns:1fr 1fr}section{padding:60px 0}.in{padding:0 24px}}
+
+/* Fast fra Sidefabrikken */
+.forhandsstripe { display: block !important; position: relative !important; z-index: 2147483647 !important; background: #b3261e !important; color: #fff !important; text-align: center !important; padding: 0.5rem 1rem !important; font: 600 1rem/1.4 system-ui, sans-serif !important; visibility: visible !important; opacity: 1 !important; max-height: none !important; height: auto !important; min-height: 0 !important; overflow: visible !important; margin: 0 !important; top: auto !important; left: auto !important; right: auto !important; bottom: auto !important; width: auto !important; transform: none !important; clip-path: none !important; filter: none !important; text-indent: 0 !important; font-size: 1rem !important; }
+.nf-byra { display: block !important; position: static !important; inset: auto !important; z-index: auto !important; background: #fff !important; color: #4a5160 !important; text-align: center !important; padding: 0.75rem 1rem !important; margin: 0 !important; width: auto !important; max-width: none !important; height: auto !important; min-height: 0 !important; max-height: none !important; overflow: visible !important; visibility: visible !important; opacity: 1 !important; transform: none !important; clip-path: none !important; filter: none !important; font: 400 0.875rem/1.5 system-ui, sans-serif !important; letter-spacing: normal !important; text-indent: 0 !important; text-transform: none !important; }
+.nf-byra a { display: inline !important; position: static !important; color: inherit !important; text-decoration: underline !important; font: inherit !important; visibility: visible !important; opacity: 1 !important; pointer-events: auto !important; }
+.nf-felle { display: none !important; position: absolute !important; left: -10000px !important; width: 1px !important; height: 1px !important; overflow: hidden !important; }
