@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://andersmathisen7-design.github.io/side-krog-utemiljo-8d6d0a32/sitemap.xml
+Sitemap: https://www.follotrefelling.no/sitemap.xml
