@@ -1,6 +1,6 @@
 "use strict";
-const LAGER = "side-ea3cd5ae";
-const FORHAND = ["./","./icon.svg","./kontakt/","./manifest.webmanifest","./melding/","./melding/sendt/","./pwa.js","./style.css","./tomterydding/","./trefelling/"];
+const LAGER = "side-9700dcc1";
+const FORHAND = ["./","./artikler/hva-er-seksjonsfelling/","./icon.svg","./kontakt/","./manifest.webmanifest","./melding/","./melding/sendt/","./pwa.js","./style.css","./tomterydding/","./trefelling-baerum/","./trefelling-oslo/","./trefelling/"];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(LAGER).then((c) => c.addAll(FORHAND)).then(() => self.skipWaiting()));
